@@ -17,8 +17,8 @@ connectToMongoDB()
 
 app.use("/api/user", userRouter)
 
-// app.get("/", async (req, res)=>{
-//     res.send("Server Running")
-// })
+app.get("/", async (req, res)=>{
+    res.send("Server Running")
+})
 
 app.listen(port, () => {console.log(`App running on port ${port}`);})
